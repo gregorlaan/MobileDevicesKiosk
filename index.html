@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="MDK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-controller="DevicesListController">
+
+    <ul>
+        <li ng-repeat="device in devices">
+            <p>{{device.Brand}} - {{device.DeviceName}}</p>
+        </li>
+    </ul>
     
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
