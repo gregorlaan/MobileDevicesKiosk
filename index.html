@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body ng-controller="DevicesListController">
+<body>
 
-    <ul>
-        <li ng-repeat="device in devices">
-            <p>{{device.Brand}} - {{device.DeviceName}}</p>
-        </li>
-    </ul>
+    <devices-list></devices-list>
     
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
+    <script src="devices-list.component.js"></script>
 </body>
 </html>
