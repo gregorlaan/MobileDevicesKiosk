@@ -1,12 +1,16 @@
-search: <input ng-model="$ctrl.query" />
+<div>
+    search: <input ng-model="$ctrl.query" />
 
-<select ng-model="$ctrl.orderOptions">
-    <option value="DeviceName">Name</option>
-    <option value="brand">Brand</option>
-</select>
+    <select ng-model="$ctrl.orderOptions">
+        <option value="DeviceName">Name</option>
+        <option value="brand">Brand</option>
+    </select>
 
-<ul>
-    <li ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions">
-        <p>{{device.Brand}} - {{device.DeviceName}}</p>
-    </li>
-</ul>
+    <ul>
+        <li ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions">
+            <p>{{device.Brand}} - {{device.DeviceName}}</p>
+            <a ng-click="selectDevice(device)">Add to Kiosk</a>
+        </li>
+    </ul>
+
+</div>
