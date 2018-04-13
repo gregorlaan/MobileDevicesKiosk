@@ -1,12 +1,7 @@
 angular.
-  module('MDK').
+  module('devicesList').
   component('devicesList', {
-    template:
-    '<ul>'+
-        '<li ng-repeat="device in $ctrl.devices">'+
-            '<p>{{device.Brand}} - {{device.DeviceName}}</p>'+
-        '</li>'+
-    '</ul>',
+    templateUrl: 'devices-list/devices-list.template.html',
     controller: function DevicesListController() {
       this.devices = [
         {
