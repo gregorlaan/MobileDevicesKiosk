@@ -8,7 +8,7 @@ angular.
       when('/devices', {
         template: '<devices-list></devices-list>'
       }).
-      when('/device/:deviceId', {
+      when('/device', {
         template: '<single-device></single-device>'
       }).otherwise('/devices');
     }
