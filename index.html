@@ -10,12 +10,17 @@
 </head>
 <body>
 
-    <devices-list></devices-list>
+    <div ng-view></div>
     
     <script src="angular.min.js"></script>
     <script src="angular-route.min.js"></script>
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    
     <script src="devices-list/devices-list.module.js"></script>
     <script src="devices-list/devices-list.component.js"></script>
+
+    <script src="devices-detail/devices-detail.module.js"></script>
+    <script src="devices-detail/devices-detail.component.js"></script>
 </body>
 </html>
