@@ -1,7 +1,7 @@
 angular.
   module('singleDevice').
   component('singleDevice', {
-    template: 'Detail view for <span>{{$ctrl.deviceId}}</span>',
+    templateUrl: 'single-device/single-device.template.html',
     controller: ['$routeParams',
       function SingleDeviceController($routeParams) {
         this.deviceId = $routeParams.deviceId;
