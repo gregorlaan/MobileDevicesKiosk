@@ -2,5 +2,5 @@
 angular.module('MDK', [
   'ngRoute',
   'devicesList',
-  'devicesDetail'
+  'singleDevice'
 ]);
