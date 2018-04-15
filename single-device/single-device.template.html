@@ -1,7 +1,129 @@
-<div>
-    <ul>
-        <li>
-            <p>{{device.DeviceName}}</p>
-        </li>
-    </ul>
+<div class="single-device col-md-4">
+    <h1>{{device.DeviceName}}</h1>
+
+    <h2 id="general-information" class="lead">General Information</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>Release date</td>
+                <td>{{device.announced}}</td>
+            </tr>
+            <tr>
+                <td>OS</td>
+                <td>{{device.os}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="hardware" class="lead">Hardware</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>Memory</td>
+                <td>{{device.internal}}</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>{{device.cpu}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="camera" class="lead">Camera</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>Primary</td>
+                <td>{{device.primary_}}</td>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>{{device.secondary}}</td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>{{device.video}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="features" class="lead">Features</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>GPS</td>
+                <td>{{device.gps}}</td>
+            </tr>
+            <tr>
+                <td>NFC</td>
+                <td>{{device.nfc}}</td>
+            </tr>
+            <tr>
+                <td>3.5 mm jack</td>
+                <td>{{device._3_5mm_jack_}}</td>
+            </tr>
+            <tr>
+                <td>Radio</td>
+                <td>{{device.radio}}</td>
+            </tr>
+            <tr>
+                <td>Sensors</td>
+                <td>{{device.sensors}}</td>
+            </tr>
+            <tr>
+                <td>USB</td>
+                <td>{{device.usb}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="dimensions" class="lead">Dimensions</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>Weight</td>
+                <td>{{device.weight}}</td>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <td>{{device.dimensions}}</td>
+            </tr>
+            <tr>
+                <td>Screen</td>
+                <td>{{device.size}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="connectivity" class="lead">Connectivity</h2>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>Sim</td>
+                <td>{{device.sim}}</td>
+            </tr>
+            <tr>
+                <td>2G</td>
+                <td>{{device._2g_bands}}</td>
+            </tr>
+            <tr>
+                <td>3G</td>
+                <td>{{device._3g_bands}}</td>
+            </tr>
+            <tr>
+                <td>Network</td>
+                <td>{{device.network_c}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
