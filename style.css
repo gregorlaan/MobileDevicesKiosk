@@ -6,3 +6,7 @@
 .single-device {
   margin: 0 auto;
 }
+
+.list-group-item {
+  border-color: #007bff;
+}
