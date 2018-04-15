@@ -1,3 +1,1 @@
-angular.module('singleDevice', [
-  'ngRoute'
-]);
+angular.module('singleDevice', []);
