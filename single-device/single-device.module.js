@@ -1,1 +1,3 @@
-angular.module('singleDevice', []);
+angular.module('singleDevice', [
+  'ngAnimate'
+]);
