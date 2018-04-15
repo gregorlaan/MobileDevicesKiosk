@@ -25,8 +25,8 @@
 
     <br>
 
-    <h2 id="general-information" class="lead">General Information</h2>
-    <table class="table table-bordered">
+    <h2 id="general-information" ng-click="showGeneralInformation = !showGeneralInformation" class="lead">General Information</h2>
+    <table ng-if="showGeneralInformation" class="table table-bordered">
         <tbody>
             <tr>
                 <td>Release date</td>
@@ -41,8 +41,8 @@
 
     <br>
 
-    <h2 id="hardware" class="lead">Hardware</h2>
-    <table class="table table-bordered">
+    <h2 id="hardware" ng-click="showHardware = !showHardware" class="lead">Hardware</h2>
+    <table ng-if="showHardware" class="table table-bordered">
         <tbody>
             <tr>
                 <td>Memory</td>
@@ -57,8 +57,8 @@
 
     <br>
 
-    <h2 id="camera" class="lead">Camera</h2>
-    <table class="table table-bordered">
+    <h2 id="camera" ng-click="showCamera = !showCamera" class="lead">Camera</h2>
+    <table ng-if="showCamera" class="table table-bordered">
         <tbody>
             <tr>
                 <td>Primary</td>
@@ -77,8 +77,8 @@
 
     <br>
 
-    <h2 id="features" class="lead">Features</h2>
-    <table class="table table-bordered">
+    <h2 id="features" ng-click="showFeatures = !showFeatures" class="lead">Features</h2>
+    <table ng-if="showFeatures" class="table table-bordered">
         <tbody>
             <tr>
                 <td>GPS</td>
@@ -109,8 +109,8 @@
 
     <br>
 
-    <h2 id="dimensions" class="lead">Dimensions</h2>
-    <table class="table table-bordered">
+    <h2 id="dimensions" ng-click="showDimensions = !showDimensions" class="lead">Dimensions</h2>
+    <table ng-if="showDimensions" class="table table-bordered">
         <tbody>
             <tr>
                 <td>Weight</td>
@@ -129,8 +129,8 @@
 
     <br>
 
-    <h2 id="connectivity" class="lead">Connectivity</h2>
-    <table class="table table-bordered">
+    <h2 id="connectivity" ng-click="showConnectivity = !showConnectivity" class="lead">Connectivity</h2>
+    <table ng-if="showConnectivity" class="table table-bordered">
         <tbody>
             <tr>
                 <td>Sim</td>
