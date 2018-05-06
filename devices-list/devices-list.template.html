@@ -13,7 +13,11 @@
         There were no matches found for your search term
         <strong>'{{searchTerm}}'</strong>. Please try again with a different term.
     </div>
-    
+
+    <div ng-if="invalidTokenAlert" class="no-matches-alert alert alert-danger" role="alert">
+        Invalid or Blocked Token. Generate a Token at <a ng-href="#!device">fonoapi.freshpixl.com</a>
+    </div>
+
     <div class="row devices-list">
         <div ng-repeat="device in $ctrl.devices" class="col-md-4">
             <div class="card">
