@@ -14,8 +14,19 @@
         <strong>'{{searchTerm}}'</strong>. Please try again with a different term.
     </div>
 
-    <div ng-if="invalidTokenAlert" class="no-matches-alert alert alert-danger" role="alert">
-        Invalid or Blocked Token. Generate a Token at <a ng-href="#!device">fonoapi.freshpixl.com</a>
+    <div ng-if="invalidTokenAlert" class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Invalid or Blocked Token!</h4>
+        <p>Generate a Token at
+            <a ng-href="#!device">fonoapi.freshpixl.com</a>
+        </p>
+        <hr>
+        <p class="mb-0">
+            Insert new API key here:
+            <form ng-submit="insertNewApiKey(newApiKey)" class="form-inline">
+                <input ng-model="newApiKey" class="newApiKey form-control mr-sm-2" type="text" placeholder="Insert API token/key here" aria-label="Insert API token/key here">
+                <button class="btn btn-secondary form-control" type="submit">Submit</button>
+            </form>
+        </p>
     </div>
 
     <div class="row devices-list">

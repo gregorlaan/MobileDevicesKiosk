@@ -8,9 +8,15 @@ angular.
         $scope.addToKioskAlert = false;
         $scope.noMatchesAlert = false;
         $scope.invalidTokenAlert = false;
+        $scope.token = '19834276e1b0580fbcadd7533b296a662db5311b7aa110f2';
+
+        $scope.insertNewApiKey = function (newApiKey) {
+          $scope.token = newApiKey;
+          console.log($scope.token);
+        }
 
         $scope.getDevicesList = function (searchTerm) {
-          $http.get('https://fonoapi.freshpixl.com/v1/getdevice?token=19834276e1b0580fbcadd7533b296a662db5311b7aa110f2&device=' + searchTerm).then(function (response) {
+          $http.get('https://fonoapi.freshpixl.com/v1/getdevice?token=' + $scope.token +'&device=' + searchTerm).then(function (response) {
             if (response.data.status == "error" && response.data.message == "Invalid or Blocked Token. Generate a Token at fonoapi.freshpixl.com") {
               console.log('token error');
               $scope.invalidTokenAlert = true;
