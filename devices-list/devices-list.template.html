@@ -9,7 +9,7 @@
     <ul>
         <li ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions">
             <p>{{device.Brand}} - {{device.DeviceName}}</p>
-            <a ng-click="selectDevice(device)">Add to Kiosk</a>
+            <button ng-click="selectDevice(device)" type="button" class="btn btn-outline-primary">Add to Kiosk</button>
         </li>
     </ul>
 
