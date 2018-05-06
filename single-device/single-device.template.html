@@ -34,11 +34,11 @@
         <tbody>
             <tr>
                 <td>Release date</td>
-                <td>{{device.announced}}</td>
+                <td>{{device.announced || '-'}}</td>
             </tr>
             <tr>
                 <td>OS</td>
-                <td>{{device.os}}</td>
+                <td>{{device.os || '-'}}</td>
             </tr>
         </tbody>
     </table>
@@ -54,11 +54,11 @@
         <tbody>
             <tr>
                 <td>Memory</td>
-                <td>{{device.internal}}</td>
+                <td>{{device.internal || '-'}}</td>
             </tr>
             <tr>
                 <td>CPU</td>
-                <td>{{device.cpu}}</td>
+                <td>{{device.cpu || '-'}}</td>
             </tr>
         </tbody>
     </table>
@@ -74,15 +74,15 @@
         <tbody>
             <tr>
                 <td>Primary</td>
-                <td>{{device.primary_}}</td>
+                <td>{{device.primary_ || '-'}}</td>
             </tr>
             <tr>
                 <td>Secondary</td>
-                <td>{{device.secondary}}</td>
+                <td>{{device.secondary || '-'}}</td>
             </tr>
             <tr>
                 <td>Video</td>
-                <td>{{device.video}}</td>
+                <td>{{device.video || '-'}}</td>
             </tr>
         </tbody>
     </table>
@@ -98,27 +98,27 @@
         <tbody>
             <tr>
                 <td>GPS</td>
-                <td>{{device.gps}}</td>
+                <td>{{device.gps || '-'}}</td>
             </tr>
             <tr>
                 <td>NFC</td>
-                <td>{{device.nfc}}</td>
+                <td>{{device.nfc || '-'}}</td>
             </tr>
             <tr>
                 <td>3.5 mm jack</td>
-                <td>{{device._3_5mm_jack_}}</td>
+                <td>{{device._3_5mm_jack_ || '-'}}</td>
             </tr>
             <tr>
                 <td>Radio</td>
-                <td>{{device.radio}}</td>
+                <td>{{device.radio || '-'}}</td>
             </tr>
             <tr>
                 <td>Sensors</td>
-                <td>{{device.sensors}}</td>
+                <td>{{device.sensors || '-'}}</td>
             </tr>
             <tr>
                 <td>USB</td>
-                <td>{{device.usb}}</td>
+                <td>{{device.usb || '-'}}</td>
             </tr>
         </tbody>
     </table>
@@ -134,15 +134,15 @@
         <tbody>
             <tr>
                 <td>Weight</td>
-                <td>{{device.weight}}</td>
+                <td>{{device.weight || '-'}}</td>
             </tr>
             <tr>
                 <td>Size</td>
-                <td>{{device.dimensions}}</td>
+                <td>{{device.dimensions || '-'}}</td>
             </tr>
             <tr>
                 <td>Screen</td>
-                <td>{{device.size}}</td>
+                <td>{{device.size || '-'}}</td>
             </tr>
         </tbody>
     </table>
@@ -158,19 +158,19 @@
         <tbody>
             <tr>
                 <td>Sim</td>
-                <td>{{device.sim}}</td>
+                <td>{{device.sim || '-'}}</td>
             </tr>
             <tr>
                 <td>2G</td>
-                <td>{{device._2g_bands}}</td>
+                <td>{{device._2g_bands || '-'}}</td>
             </tr>
             <tr>
                 <td>3G</td>
-                <td>{{device._3g_bands}}</td>
+                <td>{{device._3g_bands || '-'}}</td>
             </tr>
             <tr>
                 <td>Network</td>
-                <td>{{device.network_c}}</td>
+                <td>{{device.network_c || '-'}}</td>
             </tr>
         </tbody>
     </table>
