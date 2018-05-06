@@ -13,6 +13,12 @@
   text-align: center;
 }
 
+.add-to-kiosk-alert {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 /* single-device */
 .single-device {
   margin: 0 auto;

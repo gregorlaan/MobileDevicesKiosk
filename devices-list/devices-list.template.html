@@ -6,6 +6,10 @@
         <option value="brand">Brand</option>
     </select>
 
+    <div ng-if="alert" class="add-to-kiosk-alert alert alert-primary" role="alert">
+        {{alert}} has been added to the Kiosk.
+    </div>
+
     <div class="row devices-list">
         <div ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions" class="col-sm-4">
             <div class="card">
