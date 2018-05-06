@@ -1,10 +1,9 @@
 <div>
-    search: <input ng-model="$ctrl.query" />
 
-    <select ng-model="$ctrl.orderOptions">
-        <option value="DeviceName">Name</option>
-        <option value="brand">Brand</option>
-    </select>
+    <div class="filters border rounded border-primary">
+        <input ng-model="$ctrl.query" class="search block" type="text" placeholder="Search" aria-label="Search">
+    </div>
+
 
     <div ng-if="alert" class="add-to-kiosk-alert alert alert-primary" role="alert">
         {{alert}} has been added to the Kiosk.
