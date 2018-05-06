@@ -14,7 +14,7 @@
         <div ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions" class="col-sm-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{device.Brand}} - {{device.DeviceName}}</h5>
+                    <h5 class="card-title">{{device.DeviceName}}</h5>
                     <button ng-click="selectDevice(device)" type="button" class="btn btn-block btn-outline-primary">Add to Kiosk</button>
                 </div>
             </div>
