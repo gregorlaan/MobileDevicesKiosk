@@ -5,10 +5,15 @@
         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
     </form>
 
-    <div ng-if="alert" class="add-to-kiosk-alert alert alert-primary" role="alert">
+    <div ng-if="addToKioskAlert" class="add-to-kiosk-alert alert alert-primary" role="alert">
         {{alert}} has been added to the Kiosk. Go to the <a ng-href="#!device">Kiosk Page</a>
     </div>
 
+    <div ng-if="noMatchesAlert" class="no-matches-alert alert alert-danger" role="alert">
+        There were no matches found for your search term
+        <strong>'{{searchTerm}}'</strong>. Please try again with a different term.
+    </div>
+    
     <div class="row devices-list">
         <div ng-repeat="device in $ctrl.devices" class="col-md-4">
             <div class="card">

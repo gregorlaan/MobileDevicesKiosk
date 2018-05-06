@@ -5,16 +5,23 @@ angular.
     controller: ['$http', '$scope',
       function DevicesListController($http, $scope) {
         var self = this;
-        $scope.alert = false;
+        $scope.addToKioskAlert = false;
+        $scope.noMatchesAlert = false;
 
         $scope.getDevicesList = function (searchTerm) {
           $http.get('https://fonoapi.freshpixl.com/v1/getdevice?token=19834276e1b0580fbcadd7533b296a662db5311b7aa110f2&device=' + searchTerm).then(function (response) {
-            self.devices = response.data;
+            if (response.data.status == "error") {
+              $scope.noMatchesAlert = true;
+              self.devices = false;
+            } else {
+              self.devices = response.data;
+              $scope.noMatchesAlert = false;
+            }
           });
         }
 
         $scope.selectDevice = function (device) {
-          $scope.alert = device.DeviceName;
+          $scope.addToKioskAlert = device.DeviceName;
           Storage.prototype.setObject = function (key, value) {
             this.setItem(key, JSON.stringify(value));
           }
