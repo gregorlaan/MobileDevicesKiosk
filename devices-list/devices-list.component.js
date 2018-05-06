@@ -7,9 +7,11 @@ angular.
         var self = this;
         $scope.alert = false;
 
-        $http.get('devices/devices.json').then(function (response) {
-          self.devices = response.data
-        });
+        $scope.getDevicesList = function (searchTerm) {
+          $http.get('https://fonoapi.freshpixl.com/v1/getdevice?token=19834276e1b0580fbcadd7533b296a662db5311b7aa110f2&device=' + searchTerm).then(function (response) {
+            self.devices = response.data;
+          });
+        }
 
         $scope.selectDevice = function (device) {
           $scope.alert = device.DeviceName;

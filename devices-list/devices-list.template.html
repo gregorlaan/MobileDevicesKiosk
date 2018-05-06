@@ -1,17 +1,16 @@
 <div>
 
-    <div class="search-wrapper border rounded border-primary">
-        <input ng-model="$ctrl.query" class="search" type="text" placeholder="Search" aria-label="Search">
+    <form class="search-wrapper border rounded border-primary" ng-submit="getDevicesList(searchTerm)">
+        <input ng-model="searchTerm" class="search" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-    </div>
-
+    </form>
 
     <div ng-if="alert" class="add-to-kiosk-alert alert alert-primary" role="alert">
         {{alert}} has been added to the Kiosk.
     </div>
 
     <div class="row devices-list">
-        <div ng-repeat="device in $ctrl.devices | filter:$ctrl.query | orderBy:$ctrl.orderOptions" class="col-md-4">
+        <div ng-repeat="device in $ctrl.devices" class="col-md-4">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{device.DeviceName}}</h5>
