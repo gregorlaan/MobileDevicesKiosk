@@ -4,17 +4,19 @@
 
 /* devices-list */
 
-.filters {
+.search-wrapper {
   padding: 15px;
   margin:25px 0;
+  display: flex;
 }
 
-.filters .search {
+.search-wrapper .search {
   border: 1px solid #dee2e6;
   border-radius: .25rem;
   padding: 5px 10px;
   display: block;
   width: 100%;
+  margin-right: 10px;
 }
 
 .devices-list .card {
