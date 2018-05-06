@@ -2,6 +2,17 @@
   width: 100%;
 }
 
+/* devices-list */
+
+.devices-list .card {
+  margin-bottom: 25px;
+}
+
+.devices-list h5.card-title {
+  height: 50px;
+  text-align: center;
+}
+
 /* single-device */
 .single-device {
   margin: 0 auto;
